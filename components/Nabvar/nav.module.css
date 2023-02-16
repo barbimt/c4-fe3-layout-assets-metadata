@@ -1,0 +1,41 @@
+.nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 800px){
+    .nav{
+        flex-direction: column;
+    }
+
+    .links{
+        display: none;
+        /* width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column; */
+    }
+
+    .links>a{
+        margin-top: 1rem
+    }
+  }
