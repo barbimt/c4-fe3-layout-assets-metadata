@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <h1>{content.title}</h1>
         <h2>{content.subtitle}</h2>
         <button>{content.buttonText}</button>
-        <select onChange={changeLanguage}>
+        <select onChange={changeLanguage} style={{marginLeft: "10px"}}>
           <option value="es">ES</option>
           <option value="br">BR</option>
         </select>

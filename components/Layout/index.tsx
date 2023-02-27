@@ -1,22 +1,19 @@
-import { NextPage } from 'next'
-import React from 'react'
-import Navbar from '../Nabvar'
+import { NextPage } from "next";
+import React from "react";
+import Navbar from "../Nabvar";
 
 interface Props {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
-const Layout: NextPage<Props> = ({children}) => {
+const Layout: NextPage<Props> = ({ children }) => {
   return (
-   <>
-   <nav>
-    <Navbar/>
-   </nav>
-   <main>
-    {children}
-   </main>
+    <>
+      <nav>
+        <Navbar />
+      </nav>
+      <main>{children}</main>
+    </>
+  );
+};
 
-   </>
-  )
-}
-
-export default Layout
+export default Layout;
